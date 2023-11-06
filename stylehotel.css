@@ -1,0 +1,265 @@
+@import 'css/bootstrap/bootstrap.min.css';
+
+body {
+    background-color: #EEEEEE;
+}
+/* Preloader CSS */
+
+#preloader {
+    overflow: hidden;
+    background: #7450fe;
+    background: -webkit-linear-gradient(to right, #7450fe, #21d397);
+    background: -webkit-linear-gradient(left, #7450fe, #21d397);
+    background: linear-gradient(to right, #7450fe, #21d397);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.loader {
+    width: 46px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -23px;
+    z-index: 9;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    30% {
+        -webkit-transform: translateY(-0.25em);
+    }
+    50% {
+        -webkit-transform: translateY(0%);
+    }
+    70% {
+        -webkit-transform: translateY(0.25em);
+    }
+}
+
+.loader .inner1,
+.loader .inner2,
+.loader .inner3 {
+    display: inline-block;
+    margin: 0.125em;
+    width: 0.5em;
+    height: 0.5em;
+    border: 1px solid #fff;
+    border-radius: 1em;
+    background-color: #fff;
+    -webkit-transform-origin: 50%;
+    -webkit-animation-duration: 0.75s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.loader .inner2 {
+    -webkit-animation-delay: 0.1875s;
+}
+
+.loader .inner3 {
+    -webkit-animation-delay: 0.375s;
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-overlay:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 8, 29, 0.7);
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* body */
+
+.background {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 500px;
+}
+
+.logo {
+    width: 270px;
+}
+
+.isi h1 {
+    font-size: 120px;
+    color: #FFEFA1;
+    margin-bottom: 50px;
+    font-family: bangers;
+    margin-bottom: -1px;
+    cursor: default;
+} 
+
+.isi p {
+    font-size: 23px;
+    color: pink;
+    margin-bottom: 50px;
+    font-family: bangers;
+    cursor: default;
+}
+
+/* Top Features Area CSS */
+.animated-img {
+    -webkit-animation: animated-image 20s ease infinite;
+    animation: animated-image 20s ease infinite;
+}
+
+@-webkit-keyframes animated-image {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 20%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes animated-image {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 20%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.tengah {
+    position: relative;
+    z-index: 99;
+    border: 3px solid #FFEFA1;
+}
+
+.isibody {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+.dalemnya {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    left: 0;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    border: 3px solid #FFEFA1;
+}
+
+.tulis {
+    padding: 45px;
+    background-color: #fff;
+}
+
+.tulis h5 {
+    font-size: 25px;
+    font-family: bangers;
+    cursor: pointer;
+}
+
+.tulis a {
+    color: black;
+    text-decoration: none;
+}
+
+.tulis:after {
+    width: 1px;
+    height: calc(100% - 60px);
+    position: absolute;
+    top: 30px;
+    right: 0;
+    content: '';
+    background-color: #e5e5e5;
+}
+
+
+.jeniskamar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    margin-top: 50px;
+  }
+
+.textjeniskamar {
+    margin-top: 50px;
+  }
+
+
+.gambar {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.dot-1 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-2 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-3 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #FFEFA1;;
+}
+
+#imageSlide{
+    
+	width: 500px;
+	height: 500px;
+    object-fit: fill;
+    border: 2px solid #FFEFA1;
+}
